@@ -18,13 +18,12 @@
 <script>
 (function() {
   var gardianAPI = "http://content.guardianapis.com/search?q=football&format=json&api-key=ky5zy8mds5r25syu36t9kmzj";
-  $.getJSON( gardianAPI, {
-    tagmode: "any",
-    format: "json"
-  })
-    .done(function( data ) {
-      $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+  $.getJSON( gardianAPI, function(obj) { 
+  $.each(obj, function(key, value) { 
+         $("ul").append("<li>"+value.response.results.id+"</li>");
+  });
+ });
+});
         if ( i === 20 ) {
           return false;
         }
