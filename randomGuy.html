@@ -1,0 +1,43 @@
+<--! this script is from a randomer -->
+
+function processFootballData(footballData){
+    footyStuff = footballData;
+    var thisContainer = document.getElementById( "results" );
+    var listTmp = document.createElement( "ul" );
+    var tmpList = "";
+    for( var i=0; (i<footyStuff.results[0].length) && (i<100); i++ ) {
+            if( tmpList.length <= 0 ) {
+                tmpList = footyStuff.results[0][ i ];
+            }
+            else {
+                tmpList = tmpList + "," + footyStuff.results[0][ i ];
+        }
+    }
+
+    var footballURL = "http://content.guardianapis.com/search?q=football&format=json&api-key=ky5zy8mds5r25syu36t9kmzj";
+    $.getJSON( footballURL,
+            function( thisData ) {
+            var data = thisData;
+
+            for( var key in data ) {
+                    var thisSublist = document.createElement( "ul" );
+                    thisSublist.setAttribute('style', "border-bottom: 1px solid #000; width: 80%;");
+                    var thisItem = document.createElement( "li" );
+                    var footyResults = data[key].results[0];
+
+                    if( data.hasOwnProperty( key ) ) {
+                        var duyList = document.createElement("li");
+                        duyList.setAttribute('style', "padding-bottom: 10px;margin-top:-15px;margin-left:53px;font-size:12px;");
+                        duyFooty = document.createTextNode(footyResults);
+                        duyList.appendChild(duyFooty);
+                        thisItem.appendChild(duyList);
+                    }
+
+                    thisItem.appendChild( thisSublist );
+                }
+                listTmp.appendChild( thisItem );
+        }
+        thisContainer.appendChild( listTmp );
+});
+
+}
