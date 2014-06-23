@@ -1,0 +1,37 @@
+<?php
+// The secret key is a password you can obtain for free at this link: http://guardian.mashery.com/
+$secretkey = 'Place your secret key here';
+ 
+$mpnews = array();
+$guardianlimit = 15;
+$i=1;
+$xmlReader = new XMLReader();
+$xmlReader->open('http://api.guardianapis.com/content/search?q='.$politicsname.'&count='.$guardianlimit.'&api_key='.$secretkey.'');
+while($xmlReader->read()) {
+if($xmlReader->nodeType == XMLReader::ELEMENT) {
+if($xmlReader->localName == 'content') {
+$mpnews[$i]['apino'] = $xmlReader->getAttribute('id');
+}
+if($xmlReader->localName == 'content') {
+$mpnews[$i]['weburl'] = $xmlReader->getAttribute('web-url');
+}
+if($xmlReader->localName == 'headline') {
+// move to its textnode / child
+$xmlReader->read();
+$mpnews[$i]['title'] = $xmlReader->value;
+}
+if($xmlReader->localName == 'trail-text') {
+// move to its textnode / child
+$xmlReader->read();
+$mpnews[$i]['SmallDesc'] = $xmlReader->value;
+$i++;
+}
+}
+}
+echo '<h2>Latest News Stories (Guardian)</h2>';
+foreach ($mpnews as $mpnews[$i]) {
+echo "<h3><a href='".$mpnews[$i]['weburl']."' >".$mpnews[$i]['title']."</a></h3>";
+echo "<p>".$mpnews[$i]['SmallDesc']."</p>";
+}
+echo "<a href='http://browse.guardian.co.uk/search?search=".$politicsname."&sitesearch-radio=guardian&go-guardian=Search'>More...</a>";
+?>
