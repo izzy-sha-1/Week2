@@ -1,6 +1,6 @@
   $.ajax({
 
-    url: "http://content.guardianapis.com/search?section=news",
+    url: "http://content.guardianapis.com/search?q=debate&show-fields=trailText",
 
     dataType: "jsonp",
 
