@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  img {
+    height: 300px;
+    float: left;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  Access-Control-Allow-Origin: *
+  </head>
+<body>
+ 
+<div id="images"></div>
+ 
+<script>
+(function() {
+  var gardianAPI = "http://content.guardianapis.com/search?q=football";
+  $.getJSON( gardianAPI, function(obj) { 
+  $.each(obj, function(value) { 
+         $("ul").append("<li>"+value.response.results.webTitle+"</li>");
+  });
+ });
+})();
+       
+</script>
+ 
+</body>
+</html>
