@@ -1,4 +1,4 @@
-  var url1="http://content.guardianapis.com/search?q=news&show-fields=trailText",
+  var url1="http://content.guardianapis.com/search?q=news&show-fields=trailText";
   
   $.ajax({
     
