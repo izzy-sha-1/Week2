@@ -1,6 +1,6 @@
   $.ajax({
 
-    url: "http://content.guardianapis.com/search?q=news&show-fields=trailText",
+    url1: "http://content.guardianapis.com/search?q=news&show-fields=trailText",
 
     dataType: "jsonp",
 
@@ -17,7 +17,7 @@
 
       $.ajax({
 
-    url: "http://content.guardianapis.com/search?section=travel&show-fields=trailText",
+    url2: "http://content.guardianapis.com/search?section=travel&show-fields=trailText",
 
     dataType: "jsonp",
 
@@ -34,7 +34,7 @@
 
       $.ajax({
 
-    url: "http://content.guardianapis.com/search?q=football&show-fields=trailText",
+    url3: "http://content.guardianapis.com/search?q=football&show-fields=trailText",
 
     dataType: "jsonp",
 
