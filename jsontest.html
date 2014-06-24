@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+Access-Control-Allow-Origin: *
   <meta charset="utf-8">
   <title>jQuery.getJSON demo</title>
   <style>
@@ -16,7 +17,7 @@
 <div id="images"></div>
  
 <script>
-Access-Control-Allow-Origin: *
+
 (function() {
   var gardianAPI = "http://content.guardianapis.com/search?q=football";
   $.getJSON( gardianAPI, function(obj) { 
