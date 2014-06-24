@@ -11,7 +11,7 @@
         $( "#news" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
         $( "#news" ).append('<ul>"' + this['fields'].trailText + '</ul>');
         
-        if ( i === 3 ) {
+        if ( i === 10 ) {
           return false;
         }
 
@@ -31,9 +31,7 @@
 
         $( "#travel" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
         $( "#travel" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-        if ( i === 3 ) {
-          return false;
-        }
+        
       });
 
     }});
@@ -50,9 +48,7 @@
 
         $( "#football" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
         $( "#football" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-        if ( i === 3 ) {
-          return false;
-        }
+        
       });
 
     }});
