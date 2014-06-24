@@ -1,10 +1,9 @@
   var topics = ["travel", "news", "football"];
   for (i=0;i < topics.length;i++){
-console.log(topics[i]);};
 
   $.ajax({
 
-    url: "http://content.guardianapis.com/search?q=debate&show-fields=trailText",
+    url: "http://content.guardianapis.com/search?q=" + topics[i] + "&show-fields=trailText",
 
     dataType: "jsonp",
 
@@ -18,4 +17,4 @@ $( "#news" ).append('<ul>"' + this['fields'].trailText + '</ul>');
 
     }});
 
-
+};
