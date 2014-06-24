@@ -1,6 +1,6 @@
-  var topics = ["sport", "news", "travel", ];
+  var topics = ["travel", "news", "football"];
   for (i=0;i < topics.length;i++){
-console.log(topics[i]);
+console.log(topics[i]);};
 
   $.ajax({
 
