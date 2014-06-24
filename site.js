@@ -25,7 +25,8 @@
 
       $.each(data.response.results, function () {
 
-        $( "#travel" ).append("<li>" + this['webTitle'] + "</li>");
+        $( "#travel" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
+        $( "#travel" ).append('<ul>"' + this['fields'].trailText + '</ul>');
 
       });
 
@@ -41,7 +42,8 @@
 
       $.each(data.response.results, function () {
 
-        $( "#football" ).append("<li>" + this['webTitle'] + "</li>");
+        $( "#football" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
+        $( "#football" ).append('<ul>"' + this['fields'].trailText + '</ul>');
 
       });
 
