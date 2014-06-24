@@ -1,7 +1,8 @@
+  var url1="http://content.guardianapis.com/search?q=news&show-fields=trailText",
+  
   $.ajax({
-
-    url1: "http://content.guardianapis.com/search?q=news&show-fields=trailText",
-
+    
+    url: url1,
     dataType: "jsonp",
 
     success: function(data) {
