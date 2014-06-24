@@ -1,49 +1,34 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+Access-Control-Allow-Origin: *
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  img {
+    height: 300px;
+    float: left;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
-<html>
+<body>
+ 
+<div id="images"></div>
+ 
+<script>
 
-    <head>
-     <!-- Bootstrap core CSS -->
-    
-  
-</head>
-
-
-
-      <body>
-
-          <header>
-    
-
-      
-  </header>
-
-
-    
-  
-    <!-- Carousel slides animation concluded ==========================================-->
-        
-    <!-- Guardian stuff starts ==========================================-->
-        
-       <div class="container">
-        
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-         <center><h1>News</h1></center>
-         <ol id="news"></ol>
-        </div>
-     
-        
-        
-    <!-- Guardian stuff starts ==========================================-->
-
-      <footer>
-
-  
-     <script src ="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
-   
-     <script src='site.js'></script>
-</footer>
-
-
-     </body>
-  </html>
+(function() {
+  var gardianAPI = "http://content.guardianapis.com/search?q=football";
+  $.getJSON( gardianAPI, function(obj) { 
+  $.each(obj, function(value) { 
+         $("ul").append("<li>"+value.response.results.webTitle+"</li>");
+  });
+ });
+})();
+       
+</script>
+ 
+</body>
+</html>
