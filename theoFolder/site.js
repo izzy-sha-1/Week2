@@ -16,7 +16,7 @@
 
     $.ajax({
 
-    url: "http://content.guardianapis.com/search?section=news",
+    url: "http://content.guardianapis.com/search?section=travel",
 
     dataType: "jsonp",
 
@@ -24,7 +24,7 @@
 
       $.each(data.response.results, function () {
 
-        $( "#Travel" ).append("<li>" + this['webTitle'] + "</li>");
+        $( "#travel" ).append("<li>" + this['webTitle'] + "</li>");
 
       });
 
@@ -32,7 +32,7 @@
 
       $.ajax({
 
-    url: "http://content.guardianapis.com/search?section=news",
+    url: "http://content.guardianapis.com/search?section=football",
 
     dataType: "jsonp",
 
@@ -40,7 +40,7 @@
 
       $.each(data.response.results, function () {
 
-        $( "#Football" ).append("<li>" + this['webTitle'] + "</li>");
+        $( "#football" ).append("<li>" + this['webTitle'] + "</li>");
 
       });
 
