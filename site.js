@@ -17,7 +17,7 @@
 
       $.ajax({
 
-    url: "http://content.guardianapis.com/search?section=travel",
+    url: "http://content.guardianapis.com/search?section=travel&show-fields=trailText",
 
     dataType: "jsonp",
 
