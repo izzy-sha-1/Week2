@@ -8,7 +8,7 @@
 
       $.each(data.response.results, function () {
 
-        $( "#news" ).append("<li>" + this['webTitle'] + "</li>");
+        $( "#news" ).append("<li>"  + this['webTitle']  + <a href="" + this ['web url']> +"</li>");
 
       });
 

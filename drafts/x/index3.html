@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tabs demo</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   
+ <script src='site.js'></script>
+  <style>
+  a:link {
+    transition: all .5s linear 0;
+    color: hsl(36,50%,50%);
+}
+  </style>
+</head>
+<body>
+<div style = "box-shadow: 5px 5px 3px 1px #999" id="tabs">
+<ul>
+<li><a href="#fragment-1"><span>Travel</span></a></li>
+<li><a href="#fragment-2"><span>News</span></a></li>
+<li><a href="#fragment-3"><span>Football</span></a></li>
+</ul>
+<div id="fragment-1">
+ <ol id="travel">Travel</ol>
+ 
+ </div>
+ <div id="fragment-2">
+
+<p> <ol id="news">News</ol> </p>
+</div>
+<div id="fragment-3">
+
+<p><ol id="football">Football</ol></p>
+  
+
+</div>
+<script>
+$( "#tabs" ).tabs();
+</script>
+</body>
+</html>
