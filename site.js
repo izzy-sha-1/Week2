@@ -34,7 +34,7 @@
 
       $.ajax({
 
-    url: "http://content.guardianapis.com/search?section=football",
+    url: "http://content.guardianapis.com/search?q=football&show-fields=trailText",
 
     dataType: "jsonp",
 
