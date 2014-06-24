@@ -9,15 +9,6 @@
       $.each(data.response.results, function () {
 
         $( "#news" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
-<<<<<<< HEAD
-        
-=======
-        $( "#news" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-        
-        if ( i === 10 ) {
-          return false;
-        }
->>>>>>> 3693ad59a1d1f7f34d73466b5d09632d066e9831
 
       });
 
