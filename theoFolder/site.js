@@ -1,19 +1,24 @@
-  var topics = ["travel", "news", "football"];
-  for (i=0;i < topics.length;i++){
+  var topics = [ '1' : "travel", '2' : "news", '3' : "football"];
+  
+
+
+  $ .each( topics, function( i, val ){
+
+    
 
     $.ajax({
 
-      url: "http://content.guardianapis.com/search?q="+ topics[i] +"&show-fields=trailText",
+      url: "http://content.guardianapis.com/search?q="+ val +"&show-fields=trailText",
 
       dataType: "jsonp",
 
       success: function(data) {
         $.each(data.response.results, function () {
 
-          $( '"#'+ topics[i] '"').append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
-          $( '"#'+ topics[i] '"').append('<ul>"' + this['fields'].trailText + '</ul>');
+          $( "#" + val ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
+          $( "#" + val ).append('<ul>"' + this['fields'].trailText + '</ul>');
         });
 
       }});
-  };
+  });
   
