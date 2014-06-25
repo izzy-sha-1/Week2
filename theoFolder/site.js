@@ -8,15 +8,11 @@
     dataType: "jsonp",
 
     success: function(data) {
-
-      $.each(data.response.results, function () {
+  $.each(data.response.results, function () {
 
         $( "#" + topics[i] ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
-$( "#" + topics[i] ).append('<ul>"' + this['fields'].trailText + '</ul>');
+        $( "#" + topics[i] ).append('<ul>"' + this['fields'].trailText + '</ul>');
       });
 
     }});
-console.log("#" +topics[i] )
-console.log("#")
-console.log(topics[i] )
 };
