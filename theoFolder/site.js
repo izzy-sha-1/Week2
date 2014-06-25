@@ -1,4 +1,4 @@
-  var topics = [ '1' : "travel", '2' : "news", '3' : "football"];
+  var topics = ['1':"travel",'2':"news",'3':"football"];
   
 
 
