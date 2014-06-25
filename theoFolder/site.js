@@ -10,7 +10,7 @@
       success: function(data) {
         $.each(data.response.results, function () {
 
-          $( "#travel" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
+          $( "#"+ topics[i] ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
           $( "#travel" ).append('<ul>"' + this['fields'].trailText + '</ul>');
         });
 
