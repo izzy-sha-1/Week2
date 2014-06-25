@@ -14,7 +14,7 @@
 
       success: function(data) {
         $.each(data.response.results, function () {
-                 $( "#" + value ).append('<li><a target="_blank" href="' + this['webUrl'] + '">' + this['webTitle'] +'</a><p>' + this['fields'].trailText + '</p></li>');
+                 $( "#" + val ).append('<li><a target="_blank" href="' + this['webUrl'] + '">' + this['webTitle'] +'</a><p>' + this['fields'].trailText + '</p></li>');
         });
 
       }});
