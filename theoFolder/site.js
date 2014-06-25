@@ -3,7 +3,7 @@
 
     $.ajax({
 
-      url: "http://content.guardianapis.com/search?q=travel&show-fields=trailText",
+      url: "http://content.guardianapis.com/search?q="+ topics[i] +"&show-fields=trailText",
 
       dataType: "jsonp",
 
