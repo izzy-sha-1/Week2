@@ -16,8 +16,7 @@ $( "#" + topics[i] ).append('<ul>"' + this['fields'].trailText + '</ul>');
       });
 
     }});
-
-};
 console.log("#" +topics[i] )
 console.log("#")
 console.log(topics[i] )
+};
