@@ -18,3 +18,4 @@ $( "#" + topics[i] ).append('<ul>"' + this['fields'].trailText + '</ul>');
     }});
 
 };
+console.log("#" +topics[i] )
