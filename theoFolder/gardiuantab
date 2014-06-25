@@ -1,0 +1,126 @@
+<div class="m-zeitgeist promo-component four-col attention-data">
+
+    <div class="hd">
+    	<h3>On World news</h3>
+    </div>
+	
+  	<div class="bd">
+  		<div id="att-toggle">
+  			<ul class="tabs">
+          <li>
+            <a class="active" href="#att-most-viewed">Most viewed</a>
+          </li>
+          
+          
+          <li>
+            <a class="inactive" href="#att-latest">Latest</a>
+          </li>
+          
+        </ul>
+			 
+        <div id="att-panes">
+          <div class="att-tabs att-toggle-pane" id="att-most-viewed">
+            <p class="b2 zg-date">Last 24 hours</p>
+            <ol>
+              
+              <li class="l1 thumb">
+                
+                  
+                    <img class="tinythumb" src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/6/20/1403287497323/bac8431f-1bac-4540-bd81-70ee38eae565-140x84.jpeg">
+                  
+                
+                <span class="rank">1.&nbsp;</span>
+                
+								<a href="http://www.theguardian.com/world/2014/jun/25/north-korea-merciless-response-us-kim-jong-un-film">North Korea threatens 'merciless' response over Seth Rogen film</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">2. </span>
+                
+								<a href="http://www.theguardian.com/world/2014/jun/23/us-student-rescued-giant-vagina-sculpture-germany">US student is rescued from giant vagina sculpture in Germany</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">3. </span>
+                
+								<a href="http://www.theguardian.com/world/2014/jun/25/pornography-soviet-union-secret-collection">Inside the Soviet Union's secret pornography collection</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">4. </span>
+                
+								<a href="http://www.theguardian.com/world/2014/jun/25/morrison-asylum-seekers-should-go-home-or-face-very-very-long-detention">Morrison: asylum seekers should go home or face 'very, very long' detention</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">5. </span>
+                
+								<a href="http://www.theguardian.com/world/shortcuts/2014/jun/25/berlin-house-of-one-unity-christian-muslim-jew">Berlin's House of One: a church, a mosque and a synagogue under one roof</a>
+              </li>
+              
+              <li class="more-most-viewed l1 footer">
+					
+					<a href="http://www.theguardian.com/most-viewed/world">More most viewed</a>
+					
+              </li>
+            </ol>
+          </div>
+        
+          
+        
+          
+          <div class="att-tabs att-toggle-pane initially-off" id="att-latest">
+            <p class="b2 zg-date">Last 24 hours</p>
+            <ol>
+              
+              <li class="l1 thumb">
+                
+                  
+                    <img class="tinythumb" src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/6/25/1403713908781/Agia-Napa-Beach-Ayia-Napa-006.jpg">
+                  
+                
+                <span class="rank">1.&nbsp;</span>
+                <a href="http://www.theguardian.com/world/2014/jun/25/british-photographer-james-haggerty-dies-moped-crash-cyprus">British photographer James Haggerty dies in moped crash in Cyprus</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">2. </span>
+                <a href="http://www.theguardian.com/world/2014/jun/25/utah-gay-marriage-ban-unconstitutional">Federal appeals court rules Utah's gay marriage ban unconstitutional</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">3. </span>
+                <a href="http://www.theguardian.com/world/middle-east-live/2014/jun/25/iraq-crisis-nato-meets-as-us-military-advisers-arrive-in-baghdad-live-updates">Iraq crisis: Maliki rejects call for 'salvation' government – live updates</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">4. </span>
+                <a href="http://www.theguardian.com/world/2014/jun/25/hong-kong-unofficial-pro-democracy-referendum-beijing">Hong Kong's unofficial pro-democracy referendum irks Beijing</a>
+              </li>
+              
+              <li class="l1">
+                
+                <span class="rank">5. </span>
+                <a href="http://www.theguardian.com/world/2014/jun/25/nato-refuse-georgia-membership-russia">Nato steps back from giving Georgia full membership of alliance</a>
+              </li>
+              
+              <li class="more-latest l1 footer">
+				
+				<a href="http://www.theguardian.com/world/all">All today's stories</a>
+				
+              </li>
+            </ol>
+          </div>
+          
+  
+        </div>
+      </div>
+    </div>
+  </div>
