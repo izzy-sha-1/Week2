@@ -27,7 +27,7 @@
       dataType: "jsonp",
 
       success: function(data) {
-        $.each(data.responseData.feed, function () {
+        $.each(data.responseData.entries, function () {
                  $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['description'] + '</p></li>');
         });
 
