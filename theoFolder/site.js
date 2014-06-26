@@ -7,7 +7,6 @@
 
 var bbcfeed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
   var topics = {'1':"travel",'2':"news",'3':"football"};
-  var googleAPI = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=";
 
 
   $ .each( topics, function( i, val ){
