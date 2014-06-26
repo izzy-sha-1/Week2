@@ -24,7 +24,6 @@
 
 $.get("http://feeds.bbci.co.uk/news/rss.xml", 
 
-dataType: "xml",
   
   function (data) {
     
