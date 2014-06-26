@@ -1,5 +1,5 @@
   var topics = {'1':"travel",'2':"news",'3':"football"};
-  
+  var googleAPI = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=";
 
 
   $ .each( topics, function( i, val ){
@@ -20,19 +20,16 @@
       }});
   });
   
+   $.ajax({
 
+      url: googleAPI + "http://feeds.bbci.co.uk/news/rss.xml" + "&callback=?",
 
-$.get("http://feeds.bbci.co.uk/news/rss.xml", 
+      dataType: "jsonp",
 
-  
-  function (data) {
-    
-    $(data).find("entry").each(function () { // or "item" or whatever suits your feed
-        var el = $(this);
+      success: function(data) {
+        $.each(data.responseData.feed, function () {
+                 $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['description'] + '</p></li>');
+        });
 
-        console.log("------------------------");
-        console.log("title      : " + el.find("title").text());
-        console.log("author     : " + el.find("author").text());
-        console.log("description: " + el.find("description").text());
-    });
-});
+      }});
+  });
