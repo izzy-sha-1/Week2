@@ -24,6 +24,8 @@
 
 $.get("http://feeds.bbci.co.uk/news/rss.xml", 
 
+dataType: "xml",
+  
   function (data) {
     
     $(data).find("entry").each(function () { // or "item" or whatever suits your feed
