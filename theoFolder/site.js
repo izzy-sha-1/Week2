@@ -22,7 +22,7 @@
   
 
 
-$.get(http:feeds.bbci.co.uk/news/rss.xml, 
+$.get("http://feeds.bbci.co.uk/news/rss.xml", 
 
   success: function (data) {
     
@@ -35,4 +35,3 @@ $.get(http:feeds.bbci.co.uk/news/rss.xml,
         console.log("description: " + el.find("description").text());
     });
 });
-
