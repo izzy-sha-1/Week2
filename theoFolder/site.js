@@ -5,7 +5,7 @@
 </script>
 
 
-var bbcfeed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
+var feed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
 
 
   var topics = {'1':"travel",'2':"news",'3':"football"};
@@ -31,7 +31,7 @@ var bbcfeed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
   
    $.ajax({
 
-      url: bbcfeed,
+      url: feed,
 
       dataType: "json",
 
