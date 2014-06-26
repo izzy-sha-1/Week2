@@ -28,7 +28,7 @@
 
       success: function(data) {
         $.each(data.responseData.entries, function () {
-                 $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['description'] + '</p></li>');
+                 $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['contentSnippet'] + '</p></li>');
         });
         console.log(data)
 
