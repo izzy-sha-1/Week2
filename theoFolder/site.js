@@ -24,7 +24,7 @@
 
       url: googleAPI + "http://feeds.bbci.co.uk/news/rss.xml" + "&callback=?",
 
-      dataType: "jsonp",
+      dataType: "json",
 
       success: function(data) {
         $.each(data.responseData.entries, function () {
