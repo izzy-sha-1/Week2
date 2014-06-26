@@ -1,3 +1,12 @@
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+  <script type="text/javascript">
+  google.load("feeds", "1");
+</script>
+
+
+var bbcfeed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
+
 
   var topics = {'1':"travel",'2':"news",'3':"football"};
 
