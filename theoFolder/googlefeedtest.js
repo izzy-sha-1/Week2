@@ -15,7 +15,7 @@ google.load("feeds", "1");
             var entry = result.feed.entries[i];
             var line = '<a href="' + entry.link + '">' + entry.title + '</a>' + '<p>' + entry.contentSnippet + '</p>' ;
           
-            var div = document.createElement("div");
+            var div = document.createElement("li");
            
             div.appendChild(document.createTextNode(line));
 
