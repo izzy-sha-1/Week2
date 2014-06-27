@@ -3,7 +3,7 @@ console.log("hello");
 $.ajax({
       url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://www.digg.com/rss/index.xml",
 
-      dataType: "jsonp",
+      dataType: "json",
 
       success: function(data) {
         console.log(data);
