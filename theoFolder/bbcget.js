@@ -4,9 +4,10 @@ $.ajax({
       dataType: "jsonp",
 
       fsuccess: function(data) {
+        console.log(data);
         $.each(data.responseData.feed.entries, function () {
                  $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['contentSnippet'] + '</p></li>');
         });
-        console.log(data);
+        
 
       }});
