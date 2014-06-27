@@ -5,7 +5,7 @@ $.ajax({
 
       fsuccess: function(data) {
         $.each(data.responseData.feed.entries, function () {
-                 $( "#football" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['contentSnippet'] + '</p></li>');
+                 $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['contentSnippet'] + '</p></li>');
         });
         console.log(data)
 
