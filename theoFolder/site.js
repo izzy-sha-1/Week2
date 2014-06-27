@@ -1,14 +1,7 @@
-
-
-
-
-var feed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
-
-
   var topics = {'1':"travel",'2':"news",'3':"football"};
 
 
-  $ .each( topics, function( i, val ){
+  $.each( topics, function( i, val ){
 
     
 
@@ -26,15 +19,4 @@ var feed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
       }});
   });
   
-$.ajax({
-      url https:"//ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://www.digg.com/rss/index.xml"
 
-      dataType: "json",
-
-      feed.load(function(result) {
-        $.each(data.responseData.feed.entries, function () {
-                 $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['contentSnippet'] + '</p></li>');
-        });
-        console.log(data)
-
-      }});
