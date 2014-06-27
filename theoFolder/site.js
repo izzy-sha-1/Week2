@@ -1,8 +1,5 @@
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-  <script type="text/javascript">
-  google.load("feeds", "1");
-</script>
+
 
 
 var feed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml");
