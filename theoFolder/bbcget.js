@@ -1,16 +1,20 @@
-console.log("hello");
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
 
-$.ajax({
-      url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://www.digg.com/rss/index.xml",
+    google.load("feeds", "1");
 
-      dataType: "json",
 
-      success: function(data) {
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml?edition=int");
+      feed.setNumEntries(10);
+
+      success: function(feed) {
         console.log(data);
         console.log("hello world");
-        $.each(data.responseData.feed.entries, function () {
+        $.each(feed.responseData.feed.entries, function () {
                  $( "#bbc" ).append('<li><a target="_blank" href="' + this['link'] + '">' + this['title'] +'</a><p>' + this['contentSnippet'] + '</p></li>');
         });
         
 
-      }});
+      }};
