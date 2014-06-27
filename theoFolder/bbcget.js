@@ -6,7 +6,7 @@
       var feed = new google.feeds.Feed("http://feeds.bbci.co.uk/news/rss.xml?edition=int");
       feed.setNumEntries(10);
 console.log(feed);
-      success: function(data) {
+      //success: function(data) {
         console.log(data);
         console.log("hello world");
         $.each(data.responseData.feed.entries, function () {
