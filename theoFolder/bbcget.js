@@ -3,7 +3,7 @@ $.ajax({
 
       dataType: "jsonp",
 console.log("hello");
-      fsuccess: function(data) {
+      success: function(data) {
         console.log(data);
         console.log("hello world");
         $.each(data.responseData.feed.entries, function () {
