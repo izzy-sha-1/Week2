@@ -1,5 +1,5 @@
 $.ajax({
-      url: https:"https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://www.digg.com/rss/index.xml"
+      url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://www.digg.com/rss/index.xml"
 
       dataType: "jsonp",
 
