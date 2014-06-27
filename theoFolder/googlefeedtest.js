@@ -13,7 +13,7 @@ google.load("feeds", "1");
           var container = document.getElementById("feed");
           for (var i = 0; i < result.feed.entries.length; i+=1) {
             var entry = result.feed.entries[i];
-            var line = /*'<a href="' + entry.link + '">' +*/ title /*+ '</a>' + '<p>' + entry.contentSnippet + '</p>'*/ ;
+            var line = '<a href="' + entry.link + '">' + entry.title + '</a>' + '<p>' + entry.contentSnippet + '</p>' ;
           
             var div = document.createElement("div");
            
