@@ -1,57 +1,23 @@
   // var url1="http://content.guardianapis.com/search?q=news&show-fields=trailText";
   
-  $.ajax({
+  var topics = {'1':"travel",'2':"news",'3':"football"};
+
+
+  $.each( topics, function( i, val ){
+
     
-    type: "GET",
-    url: "http://content.guardianapis.com/search?q=news&show-fields=trailText",
-    dataType: "jsonp",
 
-    success: function(data) {
+    $.ajax({
 
-      $.each(data.response.results, function () {
+      url: "http://content.guardianapis.com/search?q="+ val +"&show-fields=trailText%2CshortUrl",
 
-        $( "#news" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
-<<<<<<< HEAD
-$( "#news" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-=======
-        $( "#news" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-        
->>>>>>> 03b113caf4f0b932883f87eb05333047571763ac
-      });
+      dataType: "jsonp",
 
-    }});
+      success: function(data) {
+        $.each(data.response.results, function () {
+                 $( "#" + val ).append('<li><a target="_blank" href="' + this['fields'].shortUrl + '">' + this['webTitle'] +'</a><p>' + this['fields'].trailText + '</p></li>');
+        });
 
-      $.ajax({
-    
-    type: "GET",
-    url: "http://content.guardianapis.com/search?section=travel&show-fields=trailText",
-    dataType: "jsonp",
-
-    success: function(data) {
-
-      $.each(data.response.results, function () {
-
-        $( "#travel" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
-        $( "#travel" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-        
-      });
-
-    }});
-
-      $.ajax({
-
-    type: "GET",
-    url: "http://content.guardianapis.com/search?q=football&show-fields=trailText",
-    dataType: "jsonp",
-
-
-    success: function(data) {
-
-      $.each(data.response.results, function () {
-
-        $( "#football" ).append('<a href="' + this['webUrl'] + '"><h3>' + this['webTitle'] + '<h3></a>');
-        $( "#football" ).append('<ul>"' + this['fields'].trailText + '</ul>');
-        
-      });
-
-    }});
+      }});
+  });
+  
