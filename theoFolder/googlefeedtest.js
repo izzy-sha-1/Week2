@@ -14,7 +14,7 @@ google.load("feeds", "1");
           for (var i = 0; i < result.feed.entries.length; i+=1) {
             var entry = result.feed.entries[i];
             
-            console.log(result.feed.entries[i];)
+            console.log(result.feed.entries[4];)
           //  var line = $( "#" + 'bbc' ).append('<a href="' + entry.link + '">' + entry.title + '</a>' + '<p>' + entry.contentSnippet + '</p>' ;)
           
             var div = document.createElement("li");
