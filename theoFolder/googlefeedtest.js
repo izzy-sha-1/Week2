@@ -15,7 +15,7 @@ google.load("feeds", "1");
             var entry = result.feed.entries[i];
             
             console.log(result.feed.entries[i];)
-            var line = $( "#" + 'bbc' ).append('<a href="' + entry.link + '">' + entry.title + '</a>' + '<p>' + entry.contentSnippet + '</p>' ;)
+          //  var line = $( "#" + 'bbc' ).append('<a href="' + entry.link + '">' + entry.title + '</a>' + '<p>' + entry.contentSnippet + '</p>' ;)
           
             var div = document.createElement("li");
            
