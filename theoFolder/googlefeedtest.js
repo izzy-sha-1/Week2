@@ -24,7 +24,7 @@ google.load("feeds", "1");
            var newslist
            
             var newslist = div.appendChild(document.createTextNode(line));
-
+console.log(entry)
 
 
             
